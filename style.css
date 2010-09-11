@@ -1,0 +1,163 @@
+/*
+Theme Name: pinkanyway
+Theme URI: http://imkeke.net/
+Description: 
+Author: keke
+Version: 1.1
+Tags: pink, two-columns, fixed-width
+*/
+
+/* css reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+input, button, textarea, select, optgroup, option { font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit; }
+
+/* clear both */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+.clearfix { zoom: 1; display: inline-block; _height: 1px }
+*html .clearfix { height: 1% }
+*+html .clearfix { height: 1% }
+.clearfix { display: block }
+
+/* base style */
+body { font: 63%/1 Helvetica, Tahoma, Arial, \5b8b\4f53, sans-serif; }
+#header, #main, #footer { font-size: 1.2em; }
+p { line-height: 1.5; }
+a img { border-width:0; }
+a:link, a:visited { color: #ef3e36; text-decoration: none; }
+a:hover { color: #ef3e36; text-decoration: none; }
+
+/* head area */
+#header { width: 960px; height: 95px; margin: 0 auto; padding: 0 10px; }
+#access { position: absolute; right: 50%; top: 0; margin-right: -480px; border-top: 2px solid #ef3e36; }
+#site-title a:link, #site-title a:visited, #site-title a:hover { text-decoration: none; font: 3.2em/95px Tahoma, Helvetica, Arial; }
+#site-title a:hover { color: #ef5f58; }
+#site-description, .skip-link { position: absolute; left: -9999px; }
+.menu { position: relative; top: -2px; }
+.menu ul li { font: 1em Verdana, Tahoma; float: left; padding: 10px 20px 0; border-top: 2px solid #ef3e36; _border: none; }
+.menu ul .current_page_item { border-color: #fdf9c8 !important; }
+.menu ul li:hover { border-top: 2px solid #fdf9c8 }
+.menu ul li li { display: none; }
+.menu ul li a:hover { text-decoration: none; }
+.menu ul li a:active { position: relative; left: 1px; top: 1px; }
+
+/* twitter line */
+#twitterLine {
+	width: 100%;
+	height: 50px;
+	background: #ef3e36;
+	color: #fdf9c8;
+}
+#twitterLine a {
+	color: #fdf9c8;
+}
+#twitterLine_inner {
+	width: 960px;
+	margin: 0 auto;
+}
+#twitterLine_right {
+	float: right;
+}
+.rssButton, .twitterButton {
+	float: left;
+	width: 44px;
+	height: 44px;
+	background: url(images/twitterLine_button.png) no-repeat left top;
+	text-indent: -9999em;
+	margin-top: 3px;
+}
+.rssButton:hover {
+	background-position: left bottom !important;
+}
+.twitterButton:hover {
+	background-position: right bottom !important;
+}
+.twitterButton {
+	background-position: right top !important;
+	position: relative;
+	left: -6px;
+}
+
+/* main layout */
+#main {
+	width: 960px;
+	margin: 60px auto 0;
+}
+#container {
+	min-height: 1px;
+	width: 100%;
+	float: left;
+}
+#container #content {
+	margin-right: 320px;
+}
+#primary {
+	float: left;
+	width: 300px;
+	margin-left: -300px;
+}
+
+/* enter content */
+#nav-above {
+	display: none;
+	margin: 0 0 0 18px;
+}
+.entry-content { font-family: Verdana, Arial, sans-serif; }
+.entry-content a:link { color: #ef3e36; text-decoration: none; }
+.entry-content a:visited { color: #666699; text-decoration: none; }
+.entry-content a:hover { color: #000; text-decoration: none; background: none; border-bottom: 1px solid #ef3e36; }
+.entry-content a:active { color: #000; text-decoration: none; background: #fee8e7; border-bottom: 1px solid #f7b9b6; }
+.entry-content a { outline: 0 }
+.entry-title {
+	font-size: 18px;;
+	font-family: Arial, sans-serif;
+	text-shadow: 1px 1px 1px #f0f0f0;
+	margin-bottom: 10px;
+	font-weight: bold;
+	float: left;
+}
+.entry-title a:active {
+	background: #fee8e7; 
+	border-bottom: 1px solid #f7b9b6;
+}
+.hentry {
+	margin: 0 0 20px;
+}
+.postDate {
+	float: right;
+	color: #fdf9c8;
+	width: 62px;
+	height: 62px;
+	background: #ef3e36;
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	text-align: center;
+	font: italic 18px Georgia, "Times New Roman", sans-serif;
+}
+.postDate:hover {
+	background: #fdf9c8;
+	color: #ef3e36;
+}
+.postDateInner {
+	padding-top: 10px;
+}
+.entry-meta {
+	clear: both;
+}
+
+/* footer */
+#footer {
+	clear: both;
+}
+#colophon {
+	width: 960px;
+	margin: 0 auto;
+}
