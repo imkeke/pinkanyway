@@ -1,13 +1,13 @@
-/*
+/* {{{ css info
 Theme Name: pinkanyway
 Theme URI: http://imkeke.net/
 Description: 
 Author: keke
 Version: 1.1
 Tags: pink, two-columns, fixed-width
-*/
+}}} */
 
-/* css reset */
+/* css reset {{{ */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
 table { border-collapse:collapse; border-spacing:0; }
 fieldset,img { border:0; }
@@ -18,23 +18,26 @@ h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
 q:before,q:after { content:''; }
 abbr,acronym { border:0; }
 input, button, textarea, select, optgroup, option { font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit; }
+/* }}} */
 
-/* clear both */
+/* clear both {{{ */
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
 .clearfix { zoom: 1; display: inline-block; _height: 1px }
 *html .clearfix { height: 1% }
 *+html .clearfix { height: 1% }
 .clearfix { display: block }
+/* }}} */
 
-/* base style */
-body { font: 63%/1 Helvetica, Tahoma, Arial, \5b8b\4f53, sans-serif; }
+/* base style {{{ */
+body { color: #383216; font: 63%/1 Helvetica, Tahoma, Arial, \5b8b\4f53, sans-serif; }
 #header, #main, #footer { font-size: 1.2em; }
 p { line-height: 1.5; }
 a img { border-width:0; }
 a:link, a:visited { color: #ef3e36; text-decoration: none; }
 a:hover { color: #ef3e36; text-decoration: none; }
+/* }}} */
 
-/* head area */
+/* head area {{{ */
 #header { width: 960px; height: 95px; margin: 0 auto; padding: 0 10px; }
 #access { position: absolute; right: 50%; top: 0; margin-right: -480px; border-top: 2px solid #ef3e36; }
 #site-title a:link, #site-title a:visited, #site-title a:hover { text-decoration: none; font: 3.2em/95px Tahoma, Helvetica, Arial; }
@@ -47,8 +50,9 @@ a:hover { color: #ef3e36; text-decoration: none; }
 .menu ul li li { display: none; }
 .menu ul li a:hover { text-decoration: none; }
 .menu ul li a:active { position: relative; left: 1px; top: 1px; }
+/* }}} */
 
-/* twitter line */
+/* twitter line {{{ */
 #twitterLine {
 	width: 100%;
 	height: 50px;
@@ -84,8 +88,9 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	position: relative;
 	left: -6px;
 }
+/* }}} */
 
-/* main layout */
+/* main layout {{{ */
 #main {
 	width: 960px;
 	margin: 60px auto 0;
@@ -103,8 +108,9 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	width: 300px;
 	margin-left: -300px;
 }
+/* }}} */
 
-/* enter content */
+/* enter content {{{ */
 #nav-above {
 	display: none;
 	margin: 0 0 0 18px;
@@ -114,24 +120,28 @@ a:hover { color: #ef3e36; text-decoration: none; }
 .entry-content a:visited { color: #666699; text-decoration: none; }
 .entry-content a:hover { color: #000; text-decoration: none; background: none; border-bottom: 1px solid #ef3e36; }
 .entry-content a:active { color: #000; text-decoration: none; background: #fee8e7; border-bottom: 1px solid #f7b9b6; }
-.entry-content a { outline: 0 }
+.entry-content a { outline: 0; }
+.entry-content p { margin-bottom: 10px; }
 .entry-title {
 	font-size: 18px;;
 	font-family: Arial, sans-serif;
 	text-shadow: 1px 1px 1px #f0f0f0;
-	margin-bottom: 10px;
 	font-weight: bold;
-	float: left;
+	width: 570px;
+	line-height: 25px;
 }
 .entry-title a:active {
 	background: #fee8e7; 
 	border-bottom: 1px solid #f7b9b6;
 }
+.entry-title a {
+	outline: none;
+}
 .hentry {
 	margin: 0 0 20px;
+	position: relative;
 }
 .postDate {
-	float: right;
 	color: #fdf9c8;
 	width: 62px;
 	height: 62px;
@@ -141,6 +151,9 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	-webkit-border-radius: 60px;
 	text-align: center;
 	font: italic 18px Georgia, "Times New Roman", sans-serif;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 .postDate:hover {
 	background: #fdf9c8;
@@ -150,10 +163,31 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	padding-top: 10px;
 }
 .entry-meta {
-	clear: both;
+	width: 570px;
+	margin: 5px 0 20px 0;
+	font-style: italic;
 }
+.separateCircle {
+	color: #ddd;
+	font-size: 14px;
+	margin: 0 5px;
+}
+.cat-links {
+	color: #aaa;
+}
+.cat-links a {
+	margin: 0 4px;
+}
+.page-link {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.entry-utility {
+	display: none;
+}
+/* }}} */
 
-/* footer */
+/* footer {{{ */
 #footer {
 	clear: both;
 }
@@ -161,3 +195,4 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	width: 960px;
 	margin: 0 auto;
 }
+/* }}} */
