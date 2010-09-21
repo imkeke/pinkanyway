@@ -215,6 +215,49 @@ a:hover { color: #ef3e36; text-decoration: none; }
 }
 /* }}} */
 
+/* sidebar {{{ */
+.radiusBlock {
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+}
+#container {
+	background: url(images/sd.png) repeat-y 660px top;
+}
+#primary .xoxo {
+	padding-left: 35px;
+}
+.searchIcon {
+	width: 30px;
+	height: 30px;
+	background: #ef3e36;
+	text-align: center;
+	position: relative;
+}
+.searchIcon div {
+	position: absolute;
+}
+.searchIcon .siJp {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #fdf9c8;
+	left: 7px;
+	top: 7px;
+}
+.searchIcon .siSb {
+	display: inline-block;
+	width: 10px;
+	height: 3px;
+	background: #fdf9c8;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	left: 15px;
+	top: 19px;
+}
+/* }}} */
+
 /* footer {{{ */
 #footer {
 	clear: both;

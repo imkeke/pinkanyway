@@ -21,6 +21,10 @@
 	
 			<li id="search" class="widget-container widget_search">
 				<?php get_search_form(); ?>
+				<div class="radiusBlock searchIcon">
+					<div class="radiusBlock siJp"></div>
+					<div class="radiusBlock siSb"></div>
+				</div>
 			</li>
 
 			<li id="archives" class="widget-container">
