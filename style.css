@@ -97,7 +97,7 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	margin: 60px auto 0;
 }
 #container {
-	min-height: 1px;
+	min-height: 500px;
 	width: 100%;
 	float: left;
 }
@@ -227,12 +227,52 @@ a:hover { color: #ef3e36; text-decoration: none; }
 #primary .xoxo {
 	padding-left: 35px;
 }
+#primary .xoxo .widget-container {
+	margin-bottom: 20px;
+}
+/* search */
+#search {
+	position: relative;
+	height: 30px;
+	width: 100%;
+}
+#searchform .screen-reader-text {
+	display: none;
+}
+#search #s {
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border: 1px solid #ef5f58;
+	width: 80%;
+	height: 28px;
+	position: relative;
+	left: -5px;
+	background: transparent;
+	padding: 0 0 0 15px;
+}
+#search #s:focus {
+	outline: none;
+}
+#searchsubmit {
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	text-indent: -9999em;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 .searchIcon {
 	width: 30px;
 	height: 30px;
 	background: #ef3e36;
 	text-align: center;
 	position: relative;
+	float: left;
 }
 .searchIcon div {
 	position: absolute;
