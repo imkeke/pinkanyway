@@ -236,20 +236,25 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	height: 30px;
 	width: 100%;
 }
-#searchform .screen-reader-text {
-	display: none;
-}
-#search #s {
+#searchform_div {
+	width: 222px;
+	height: 28px;
 	border-radius: 60px;
 	-moz-border-radius: 60px;
 	-webkit-border-radius: 60px;
 	border: 1px solid #ef5f58;
-	width: 80%;
-	height: 28px;
 	position: relative;
-	left: -5px;
+	left: 25px;
+}
+#searchform .screen-reader-text {
+	display: none;
+}
+#search #s {
+	height: 16px;
+	line-height: 16px;
+	padding: 6px 4px;
 	background: transparent;
-	padding: 0 0 0 15px;
+	border: none;
 }
 #search #s:focus {
 	outline: none;
@@ -263,7 +268,7 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	height: 30px;
 	display: inline-block;
 	position: absolute;
-	left: 0;
+	left: -30px;
 	top: 0;
 }
 .searchIcon {

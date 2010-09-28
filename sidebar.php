@@ -24,7 +24,7 @@
 					<div class="radiusBlock siJp"></div>
 					<div class="radiusBlock siSb"></div>
 				</div>
-				<?php get_search_form(); ?>
+				<div id="searchform_div"><?php get_search_form(); ?></div>
 			</li>
 
 			<li id="archives" class="widget-container">
