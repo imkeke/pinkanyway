@@ -124,8 +124,8 @@ a:hover { color: #ef3e36; text-decoration: none; }
 .entry-content a { outline: 0; }
 .entry-content p { margin-bottom: 10px; }
 .entry-title {
-	font-size: 18px;;
-	font-family: Arial, sans-serif;
+	font-size: 19px;;
+	font-family: Arial, 黑体, sans-serif;
 	text-shadow: 1px 1px 1px #f0f0f0;
 	font-weight: bold;
 	width: 570px;
@@ -227,8 +227,18 @@ a:hover { color: #ef3e36; text-decoration: none; }
 #primary .xoxo {
 	padding-left: 35px;
 }
-#primary .xoxo .widget-container {
-	margin-bottom: 20px;
+#primary .widget-container {
+	margin-bottom: 25px;
+}
+#primary .widget-container h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#primary .widget-container ul li {
+	line-height: 1.5;
+	margin-left: 14px;
+	list-style: circle;
 }
 /* search */
 #search {
@@ -255,6 +265,10 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	padding: 6px 4px;
 	background: transparent;
 	border: none;
+	position: absolute;
+	left: 8px;
+	top: 0;
+	width: 200px;
 }
 #search #s:focus {
 	outline: none;
@@ -268,8 +282,8 @@ a:hover { color: #ef3e36; text-decoration: none; }
 	height: 30px;
 	display: inline-block;
 	position: absolute;
-	left: -30px;
-	top: 0;
+	left: -26px;
+	top: -1px;
 }
 .searchIcon {
 	width: 30px;
@@ -318,5 +332,9 @@ a:hover { color: #ef3e36; text-decoration: none; }
 #colophon {
 	width: 960px;
 	margin: 0 auto;
+}
+#site-info {
+	float: left;
+	margin-right: 30px;
 }
 /* }}} */
