@@ -54,7 +54,7 @@ get_header(); ?>
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
 
-				<div id="nav-below" class="navigation">
+				<div id="single-nav-below" class="navigation">
 					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentyten' ) . '</span> %title' ); ?></div>
 					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '</span>' ); ?></div>
 				</div><!-- #nav-below -->
