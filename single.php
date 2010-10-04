@@ -23,7 +23,6 @@ get_header(); ?>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 
 					<div class="entry-meta">
-						<?php twentyten_posted_on(); ?>
 					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
@@ -49,14 +48,21 @@ get_header(); ?>
 <?php endif; ?>
 
 					<div class="entry-utility">
-						<?php twentyten_posted_in(); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php
+							$tags_list = get_the_tag_list( '', ', ' );
+							if ( $tags_list ):
+						?>
+							<span class="tag-links">
+								<?php printf( __( '<span class="%1$s">Posted Tags: </span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
+							</span>
+						<?php endif; ?>
+						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
 
 				<div id="single-nav-below" class="navigation">
-					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentyten' ) . '</span> %title' ); ?></div>
-					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '</span>' ); ?></div>
+					<div class="nav-previous"><?php previous_post_link( '%link', '%title' . _x( '', 'Previous post link', 'twentyten' ) . '' ); ?></div>
+					<div class="nav-next"><?php next_post_link( '%link', '%title ' . _x( '', 'Next post link', 'twentyten' ) . '' ); ?></div>
 				</div><!-- #nav-below -->
 
 				<?php comments_template( '', true ); ?>
