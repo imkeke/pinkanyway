@@ -197,6 +197,12 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 }
 .entry-utility a {
 	margin: 0 2px 0 7px;
+	color: #666;
+	border-bottom: 1px dotted #999;
+}
+.entry-utility a:hover {
+	border-bottom: 1px solid #ccc;
+	background: #f0f0f0;
 }
 .gallery dl {
 	float: left;
@@ -252,7 +258,7 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	font-size: 16px;
 	margin-bottom: 20px;
 }
-#reply-title {
+#reply-title, #respond .comment-notes, #respond .form-allowed-tags {
 	display: none;
 }
 #comments #comments-title em {
@@ -261,11 +267,11 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 #respond {
 	margin-top: 40px;
 }
-#respond .comment-notes {
-	display: none;
-}
 #respond .comment-form-author, #respond .comment-form-email, #respond .comment-form-url {
 	height: 40px;
+}
+.logged-in-as {
+	margin-bottom: 5px;
 }
 #author, #email, #url {
 	float: left;
@@ -300,6 +306,48 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 #submit {
 	margin-top: 10px;
 	cursor: pointer;
+	border: none;
+	background: #ef3e36;
+	color: #fdf9c8;
+	padding: 7px 20px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Arial;
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+}
+#submit:hover {
+	background: #ff6600;	
+}
+/* comment list */
+.commentlist .comment {
+	margin: 0 0 30px;
+}
+.comment-author {
+	position: relative;
+	margin-bottom: 10px;
+	float: left;
+}
+.comment-meta {
+	float: right;
+}
+.comment-meta a {
+	color: #fff;
+}
+.comment-body {
+	clear: both;
+}
+.comment-author .avatar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: -60px;
+}
+.comment-author .fn {
+}
+.comment-author .fn a {
+	font-size: 1.1em;
 }
 /* }}} */
 
@@ -319,7 +367,7 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	margin-bottom: 25px;
 }
 #primary .widget-container h3 {
-	font-size: 16px;
+	font-size: 1.1em;
 	font-weight: bold;
 	margin-bottom: 8px;
 }
