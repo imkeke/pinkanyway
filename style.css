@@ -325,18 +325,24 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 /* comment list */
 .commentlist .comment {
 	margin: 0 0 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #f0f0f0;
+}
+.commentlist .comment .commentInner {
 	position: relative;
+	padding-bottom: 20px;
 }
 .comment-author {
 	position: relative;
 	margin-bottom: 10px;
-	float: left;
 }
 .comment-meta {
-	float: right;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 .comment-meta a {
-	color: #fff;
+	color: #999;
 }
 .comment-body {
 	clear: both;
@@ -352,6 +358,9 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 .comment-author .fn a {
 	font-size: 1.1em;
 }
+.comment .says {
+	color: #666;
+}
 .comment .reply {
 	position: absolute;
 	top: 49px;
@@ -361,6 +370,37 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 }
 .comment .reply .comment-reply-link {
 	padding: 0 4px;
+	font-size: 9px;
+}
+.byuser {
+	background: #f2f9fd;
+}
+/* children list */
+.children {
+	margin-top: 10px;
+}
+.children .comment {
+	border: none;
+	margin: 0;
+	padding: 5px 0 5px 10px;
+}
+.children .comment.odd {
+	border-left: 2px solid #93ce11;
+}
+.children .comment.even {
+	border-left: 2px solid #2885a0;
+}
+.children .avatar {
+	width: 16px;
+	height: 16px;
+	margin: 0;
+}
+.children .fn {
+	margin-left: 25px;
+}
+.children .fn, .children .says {
+	position: relative;
+	top: 4px;
 }
 /* }}} */
 
@@ -370,11 +410,14 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	-moz-border-radius: 60px;
 	-webkit-border-radius: 60px;
 }
-#container {
+#main {
 	background: url(images/sd.png) repeat-y 660px top;
 }
 #primary .xoxo {
 	padding-left: 35px;
+}
+#primary .xoxo li .xoxo {
+	padding: 0;
 }
 #primary .widget-container {
 	margin-bottom: 25px;

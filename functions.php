@@ -302,7 +302,7 @@ function twentyten_comment( $comment, $args, $depth ) {
 		case '' :
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<div id="comment-<?php comment_ID(); ?>">
+		<div id="comment-<?php comment_ID(); ?>" class="commentInner">
 		<div class="comment-author vcard">
 			<?php echo get_avatar( $comment, 40 ); ?>
 			<?php printf( __( '%s <span class="says">says:</span>', 'twentyten' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
