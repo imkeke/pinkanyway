@@ -22,6 +22,7 @@
 	get_sidebar( 'footer' );
 ?>
 
+		<div class="footer-text clearfix">
 			<div id="site-info">
 				<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php bloginfo( 'name' ); ?>
@@ -35,6 +36,7 @@
 					<?php printf( __('Proudly powered by %s.', 'twentyten'), 'WordPress' ); ?>
 				</a>
 			</div><!-- #site-generator -->
+		</div>
 
 		</div><!-- #colophon -->
 	</div><!-- #footer -->
