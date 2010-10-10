@@ -39,6 +39,9 @@ a:hover { color: #ef3e36; text-decoration: none; }
 a:active { background: #fee8e7; }
 abbr { border-bottom: 1px dotted #fee8e7; cursor: help; }
 code, pre { font-family: "Courier New", Monaco, monospace; }
+::selection { background:#f07069; color:#fdf9c8; }
+::-moz-selection { background:#f07069; color:#fdf9c8; }
+::-webkit-selection { background:#f07069; color:#fdf9c8; }
 /* }}} */
 
 /* head area {{{ */
@@ -117,6 +120,11 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 /* }}} */
 
 /* enter content {{{ */
+#content .page-title {
+	font-size: 20px;
+	margin-bottom: 40px;
+	text-align: center;
+}
 #nav-above {
 	display: none;
 	margin: 0 0 0 18px;
@@ -519,7 +527,10 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	position: relative;
 }
 #footer a {
-	color: #f9ecbe;
+	color: #f4e2a1;
+}
+#footer a:hover {
+	text-decoration: underline;
 }
 #footer a:active {
 	background: none;

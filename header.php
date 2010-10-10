@@ -121,8 +121,8 @@ _______________________________________________________________________________
 		?>人已订阅
 		 -->
 		 <div id="twitterLine_right">
-			<a href="javascript: void(0);" title="点击订阅RSS" class="rssButton">Rss</a>
-			<a href="javascript: void(0);" title="Follow me on twitter" class="twitterButton">Twitter</a>
+			<a href="http://feeds.feedburner.com/kekeblog" class="rssButton">Rss</a>
+			<a href="http://twitter.com/imkeke" title="Follow me on twitter" class="twitterButton">Twitter</a>
 		 </div>
 	</div>
 </div>
