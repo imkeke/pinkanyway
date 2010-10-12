@@ -216,6 +216,41 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	float: left;
 	margin: 0 10px 10px 0;
 }
+/* 排版 */
+.entry-content h4 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 30px 0 5px;
+	font-family: "黑体", Arial, sans-serif;
+	color: #333;
+	text-shadow: 1px 1px 1px #f0f0f0;
+}
+.codecolorer-container {
+	border-color: #fff !important;
+}
+/* }}} */
+
+/* page style {{{ */
+.page .entry-title {
+	margin-bottom: 30px;
+}
+.car-container .car-list > li {
+	margin-bottom: 20px;
+}
+.car-monthlisting li {
+	margin-bottom: 10px;
+}
+.car-container .car-list li .car-yearmonth {
+	display: block;
+	padding: 10px 0 10px 20px;
+	border-left: 4px solid #ef3e36;
+	font-size: 16px;
+	margin: 0 0 20px 0;
+}
+.car-monthlisting li span {
+	color: #666;
+	font-style: italic;
+}
 /* }}} */
 
 /* page navigation {{{ */
@@ -259,6 +294,9 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 /* }}} */
 
 /* comments {{{ */
+#comments .nocomments {
+	display: none;
+}
 #comments {
 	margin: 40px 0;
 }
@@ -521,13 +559,12 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 #footer {
 	clear: both;
 	background: #2E2925;
-	color: #f9ecbe;
+	color: #7B6F57;
 	padding: 10px 0 35px;
 	border-top: 4px solid #e1dfdf;
 	position: relative;
 }
 #footer a {
-	color: #f4e2a1;
 }
 #footer a:hover {
 	text-decoration: underline;
