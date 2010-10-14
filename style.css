@@ -217,6 +217,16 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	margin: 0 10px 10px 0;
 }
 /* 排版 */
+.entry-content ul, ol {
+	margin: 20px 0 20px 30px;
+}
+.entry-content ul li, .entry-content ol li {
+	margin: 10px 0;
+	list-style: circle;
+}
+.entry-content ol li {
+	list-style: decimal !important;
+}
 .entry-content h4 {
 	font-size: 1.1em;
 	font-weight: bold;
@@ -227,6 +237,24 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 }
 .codecolorer-container {
 	border-color: #fff !important;
+}
+blockquote {
+	padding: 10px;
+	margin: 20px 0 20px 30px;
+	background: #f0f0f0;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #e6e6e6;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	text-shadow: 0 1px 0 #fff;
+}
+blockquote blockquote {
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+blockquote p {
+	margin: 0 !important;
 }
 /* }}} */
 
@@ -303,6 +331,9 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 #comments h3 {
 	font-size: 16px;
 	margin-bottom: 20px;
+}
+#respond {
+	margin-top: 20px;
 }
 #respond .comment-notes, #respond .form-allowed-tags {
 	display: none;
@@ -447,6 +478,9 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 .children .fn, .children .says {
 	position: relative;
 	top: 4px;
+}
+.pingback {
+	margin: 0 0 30px;
 }
 /* }}} */
 
