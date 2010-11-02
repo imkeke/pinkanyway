@@ -38,11 +38,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <!--[if IE]>
-<style type="text/css" media="screen">
-	.searchIcon {
-		display: none;
-	}
-</style>
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/ie.css" type="text/css" media="screen" charset="utf-8">
 <![endif]-->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
