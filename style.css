@@ -269,8 +269,12 @@ blockquote p {
 .page .entry-title {
 	margin-bottom: 30px;
 }
+.car-container .car-list {
+	margin: 0;
+}
 .car-container .car-list > li {
 	margin-bottom: 20px;
+	list-style: none;
 }
 .car-monthlisting li {
 	margin-bottom: 10px;

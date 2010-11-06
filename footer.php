@@ -24,6 +24,7 @@
 
 		<div class="footer-text clearfix">
 			<div id="site-info">
+				<span>Copyright © 2010</span>
 				<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php bloginfo( 'name' ); ?>
 				</a>
@@ -49,6 +50,7 @@
 
 	wp_footer();
 ?>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/all.js" type="text/javascript"></script>
 </body>
 </html>

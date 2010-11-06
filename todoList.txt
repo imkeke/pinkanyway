@@ -1,0 +1,41 @@
+安装插件：
+1. codecolorer
+	20 - 640 - 500 - Twitlight
+	codes
+	.codes * {font-size: 12px !important;}
+
+2. clean-archives-reloaded
+
+未完成：
+1. 404页面
+
+2. ie下的搜索区域
+
+3. RSS按纽弹出框（可选）
+
+4. About页面
+
+5. links页面
+
+布局：
+1. footer 区域
+	(a). Flickr Photos
+		代码：
+		<div id="flickr_badge_wrapper">
+		<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=10&display=latest&size=s&layout=x&source=user&user=28981259%40N04"></script>
+		</div>
+	(b). Recent Posts
+	(c). About
+		Actually, this paragraph is very zhuangbility, if you can not understanter, it's ok.
+
+2. 侧边栏
+	<li id="search" class="widget-container widget_search">
+		<div class="radiusBlock searchIcon">
+			<div class="radiusBlock siJp"></div>
+			<div class="radiusBlock siSb"></div>
+		</div>
+		<div id="searchform_div"><?php get_search_form(); ?></div>
+	</li>
+
+可做：
+1. 作品展示页。
