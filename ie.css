@@ -1,8 +1,9 @@
-.searchIcon {
+#search {
 	display: none;
 }
-#searchsubmit {
+#respond .comment-form-author, #respond .comment-form-email, #respond .comment-form-url {
+	height: 70px;
 }
-#s {
-	width: 150px !important;
+#respond {
+	_padding-left: 5px;
 }

@@ -9,7 +9,7 @@
 未完成：
 1. 404页面
 
-2. ie下的搜索区域
+2. ie下的搜索区域（完成）
 
 3. RSS按纽弹出框（可选）
 
@@ -29,13 +29,25 @@
 		Actually, this paragraph is very zhuangbility, if you can not understanter, it's ok.
 
 2. 侧边栏
-	<li id="search" class="widget-container widget_search">
-		<div class="radiusBlock searchIcon">
-			<div class="radiusBlock siJp"></div>
-			<div class="radiusBlock siSb"></div>
-		</div>
-		<div id="searchform_div"><?php get_search_form(); ?></div>
-	</li>
+<div id="search">
+	<div class="radiusBlock searchIcon">
+		<div class="radiusBlock siJp"></div>
+		<div class="radiusBlock siSb"></div>
+	</div>
+	<div id="searchform_div"><form action="http://wp.localhost/" id="searchform" method="get" role="search">
+	<div><label for="s" class="screen-reader-text">Search for:</label>
+	<input type="text" id="s" name="s" value="">
+	<input type="submit" value="Search" id="searchsubmit">
+	</div>
+	</form></div>
+</div>
+<!--[if IE]>
+<div><form action="http://wp.localhost/" id="searchform" method="get" role="search">
+	<div><label for="s" class="screen-reader-text">Search for:</label>
+	<input type="text" id="" name="s" value="">
+	<input type="submit" value="Search" id="">
+	</div>
+<![endif]-->
 
 可做：
 1. 作品展示页。
