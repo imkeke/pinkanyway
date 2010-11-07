@@ -38,7 +38,7 @@ $(document).ready(function() {
 	});
 
 	// 404 页面添加
-	var block404 = $(".block_404").length;
+	var block404 = $("#block_404").length;
 	if (block404) {
 		$("body").addClass("has404");
 	}
