@@ -18,7 +18,7 @@ get_header(); ?>
 					<div class="radiusBlock siJp"></div>
 					<div class="radiusBlock siSb"></div>
 				</div>
-				<div id="searchform_div"><form action="http://wp.localhost/" id="searchform" method="get" role="search">
+				<div id="searchform_div"><form action="<?php echo home_url( '/' ); ?>" id="searchform" method="get" role="search">
 				<div><label for="s" class="screen-reader-text">Search for:</label>
 				<input type="text" id="s" name="s" value="">
 				<input type="submit" value="Search" id="searchsubmit">
@@ -26,20 +26,18 @@ get_header(); ?>
 				</form></div>
 			</div>
 			<!--[if IE]>
-			<div><form action="http://wp.localhost/" id="searchform" method="get" role="search">
+			<div id="search_ie">
+				<form action="<?php echo home_url( '/' ); ?>" id="searchform" method="get" role="search">
 				<div><label for="s" class="screen-reader-text">Search for:</label>
 				<input type="text" id="" name="s" value="">
 				<input type="submit" value="Search" id="">
 				</div>
+			</div>
 			<![endif]-->
 		</div>
 
 		<div class="theman">
 		</div>
 	</div><!-- #block_404 -->
-	<script type="text/javascript">
-		// focus on search field after it has loaded
-		document.getElementById('s') && document.getElementById('s').focus();
-	</script>
 
 <?php get_footer(); ?>

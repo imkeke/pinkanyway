@@ -661,7 +661,7 @@ blockquote p {
 
 /* 404 {{{ */
 .has404 #main {
-	background-image: none;
+	background-image: none !important;
 }
 #block_404 {
 	margin-bottom: 50px;
@@ -679,12 +679,13 @@ blockquote p {
 	margin: 100px 0 0 50px;
 	float: left;
 }
-#block_404 .top #search {
+#block_404 .top #search, #search_ie {
 	float: right;
 	width: 400px;
 	margin: 140px 0 0;
 }
 .theman {
+	width: 960px;
 	height: 275px;
 	margin-top: -76px;
 	background: url(images/404boy.png) no-repeat center top;

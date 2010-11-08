@@ -7,7 +7,7 @@
 2. clean-archives-reloaded
 
 未完成：
-1. 404页面
+1. 404页面（完成）
 
 2. ie下的搜索区域（完成）
 
@@ -34,7 +34,7 @@
 		<div class="radiusBlock siJp"></div>
 		<div class="radiusBlock siSb"></div>
 	</div>
-	<div id="searchform_div"><form action="http://wp.localhost/" id="searchform" method="get" role="search">
+	<div id="searchform_div"><form action="<?php echo home_url( '/' ); ?>" id="searchform" method="get" role="search">
 	<div><label for="s" class="screen-reader-text">Search for:</label>
 	<input type="text" id="s" name="s" value="">
 	<input type="submit" value="Search" id="searchsubmit">
@@ -42,12 +42,14 @@
 	</form></div>
 </div>
 <!--[if IE]>
-<div><form action="http://wp.localhost/" id="searchform" method="get" role="search">
+<div><form action="<?php echo home_url( '/' ); ?>" id="searchform" method="get" role="search">
 	<div><label for="s" class="screen-reader-text">Search for:</label>
 	<input type="text" id="" name="s" value="">
 	<input type="submit" value="Search" id="">
 	</div>
+</div>
 <![endif]-->
 
 可做：
 1. 作品展示页。
+2. Google自定义搜索。
