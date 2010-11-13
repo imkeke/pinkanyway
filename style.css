@@ -132,6 +132,13 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	margin-bottom: 40px;
 	text-align: center;
 }
+.page-title span {
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	padding: 0 2px;
+	background: yellow;
+}
 #nav-above {
 	display: none;
 	margin: 0 0 0 18px;
@@ -690,3 +697,11 @@ blockquote p {
 	background: url(images/404boy.png) no-repeat center top;
 }
 /* }}} */
+
+.related_post_title {
+	font-size: 16px;
+	margin-top: 20px;
+}
+#akismetwrap #akismetstats {
+	background: none;
+}
