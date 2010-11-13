@@ -703,5 +703,5 @@ blockquote p {
 	margin-top: 20px;
 }
 #akismetwrap #akismetstats {
-	background: none;
+	background: none !important;
 }
