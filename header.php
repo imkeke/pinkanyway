@@ -12,6 +12,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="keywords" content="前端开发, 网页设计, Linux, keke, WordPress, Vim, F2e" />
+<meta neme="description" content="这是 keke 的博客, 关于前端开发, 网页设计, UED, IT, Linux, Vim 等内容。" />
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.

@@ -45,13 +45,8 @@ $(document).ready(function() {
 
 	// rss 按纽
 	$(".rssButton").click(function() {
-		$(this).css("position", "relative");
-		for (var i = 6; i >= 0; i = i - 1) {
-			if (i % 2 == 0) {
-				$(this).animate({left: "4px"}, i * 10);
-			} else {
-				$(this).animate({left: "-4px"}, i * 10);
-			}
+		for (var i = 8; i >= 0; i = i - 1) {
+			$(this).animate({left: Math.pow(-1, i)*6 + "px"}, i*10);
 		};
 		return false;
 	});
