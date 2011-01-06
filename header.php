@@ -111,15 +111,16 @@ _______________________________________________________________________________
 
 <div id="twitterLine">
 	<div id="twitterLine_inner">
-		<!-- 获取订阅数feedsky
-		<?php /*
-		$xml = simplexml_load_file('http://www.feedsky.com/rpc/feed_statistic_xml.php?u=kekeblog');
-		$node = $xml->xpath('/month/day[last()]');
-		foreach($node as $n){echo $n['subcount'];} */
-		?>人已订阅
-		 -->
 		 <div id="twitterLine_right">
-			<a href="http://feeds.feedburner.com/kekeblog" class="rssButton">Rss</a>
+			<a href="http://feeds.feedburner.com/kekeblog" class="rssButton">Rss
+				<div id="rssPop">
+					<div id="rssPopInner">
+						<div id="rssPopContent">
+							jfdkkkk
+						</div>
+					</div>
+				</div>
+			</a>
 			<a href="http://twitter.com/imkeke" title="Follow me on twitter" class="twitterButton">Twitter</a>
 		 </div>
 	</div>

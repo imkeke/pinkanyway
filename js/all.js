@@ -44,10 +44,20 @@ $(document).ready(function() {
 	}
 
 	// rss 按纽
-	$(".rssButton").click(function() {
+	var rssPop = $("#rssPop"); // 弹出框
+	$(".rssButton").click(function() { // 点击后隐藏弹出框并摇头
+		rssPop.hide();		
 		for (var i = 8; i >= 0; i = i - 1) {
 			$(this).animate({left: Math.pow(-1, i)*6 + "px"}, i*10);
 		};
 		return false;
 	});
+	// 鼠标移上去的效果
+	if (rssPop.length) {
+		$(".rssButton").hover(function() {
+			rssPop.show();		
+		}, function() {
+			rssPop.hide();		
+		});
+	}
 });
