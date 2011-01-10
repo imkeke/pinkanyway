@@ -112,15 +112,23 @@ _______________________________________________________________________________
 <div id="twitterLine">
 	<div id="twitterLine_inner">
 		 <div id="twitterLine_right">
-			<a href="http://feeds.feedburner.com/kekeblog" class="rssButton">Rss
+		 	<div id="rssWrap">
+				<a href="http://feeds.feedburner.com/kekeblog" class="rssButton">Rss</a>
 				<div id="rssPop">
 					<div id="rssPopInner">
 						<div id="rssPopContent">
-							jfdkkkk
+							<div class="lf rssCount">123</div>
+							<div class="rt rssSelect">
+								{
+									<a href="http://feed.feedsky.com/kekeblog" title="在 feedsky 上的 rss">feedsky</a>
+									<span>&</span>
+									<a href="http://feeds.feedburner.com/kekeblog" title="在 feedburner 上的 rss">feedburner</a>
+								}
+							</div>
 						</div>
 					</div>
 				</div>
-			</a>
+			</div>
 			<a href="http://twitter.com/imkeke" title="Follow me on twitter" class="twitterButton">Twitter</a>
 		 </div>
 	</div>

@@ -45,7 +45,8 @@ $(document).ready(function() {
 
 	// rss 按纽
 	var rssPop = $("#rssPop"); // 弹出框
-	$(".rssButton").click(function() { // 点击后隐藏弹出框并摇头
+	var rssButton = $(".rssButton"); // rss 按钮
+	rssButton.click(function() { // 点击后隐藏弹出框并摇头
 		rssPop.hide();		
 		for (var i = 8; i >= 0; i = i - 1) {
 			$(this).animate({left: Math.pow(-1, i)*6 + "px"}, i*10);
@@ -54,10 +55,12 @@ $(document).ready(function() {
 	});
 	// 鼠标移上去的效果
 	if (rssPop.length) {
-		$(".rssButton").hover(function() {
-			rssPop.show();		
+		$("#rssWrap").hover(function() {
+			rssPop.fadeIn();		
+			rssButton.addClass("rssButtonHover"); // 让按钮处于 hover 状态
 		}, function() {
 			rssPop.hide();		
+			rssButton.removeClass("rssButtonHover");
 		});
 	}
 });
