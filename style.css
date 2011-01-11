@@ -118,7 +118,8 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 #rssPop {
 	display: none;
 	height: 44px;
-	width: 260px;
+	width: 315px;
+	padding-left: 20px;
 	background: #fdf9c8;
 	position: absolute;
 	top: 0;
@@ -135,6 +136,7 @@ code, pre { font-family: "Courier New", Monaco, monospace; }
 	margin-right: 20px;
 	height: 100%;
 	line-height: 44px;
+	font-size: 14px;
 }
 .rssCount {
 	font-size: 40px;

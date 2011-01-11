@@ -117,7 +117,7 @@ _______________________________________________________________________________
 				<div id="rssPop">
 					<div id="rssPopInner">
 						<div id="rssPopContent">
-							<div class="lf rssCount">123</div>
+							<div class="lf rssCount"><?php if(function_exists('get_feedsky_count')) {echo get_feedsky_count() + 150;} ?></div>
 							<div class="rt rssSelect">
 								{
 									<a href="http://feed.feedsky.com/kekeblog" title="在 feedsky 上的 rss">feedsky</a>
