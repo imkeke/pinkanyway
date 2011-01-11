@@ -122,7 +122,7 @@ _______________________________________________________________________________
 								{
 									<a href="http://feed.feedsky.com/kekeblog" title="在 feedsky 上的 rss">feedsky</a>
 									<span>&</span>
-									<a href="http://feeds.feedburner.com/kekeblog" title="在 feedburner 上的 rss">feedburner</a>
+									<a href="http://www.google.com/reader/view/feed/http://feeds.feedburner.com/kekeblog" title="在 feedburner 上的 rss">feedburner</a>
 								}
 							</div>
 						</div>
